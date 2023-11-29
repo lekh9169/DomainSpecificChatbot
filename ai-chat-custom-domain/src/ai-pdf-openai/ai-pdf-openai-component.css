@@ -1,0 +1,108 @@
+/* FileUpload.css */
+.file-upload-container {
+    text-align: center;
+  }
+  
+  .custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color:rgb(12, 35, 82);
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .custom-file-upload:hover {
+    background-color: rgb(12, 35, 82)
+  }
+  
+  .selected-file-info {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .upload-btn {
+    font-size: 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .upload-btn.uploading {
+    background-color: #218838;
+    cursor: not-allowed;
+  }
+  
+  .upload-btn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  .upload-btn:hover {
+    background-color: #218838;
+  }
+  
+  .upload-feedback {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .upload-feedback.success {
+    color: #28a745;
+    background-color: #d4edda;
+  }
+  
+  .upload-feedback.failure {
+    color: #721c24;
+    background-color: #f8d7da;
+  }
+  
+
+  /* Add these styles in your CSS file or style section */
+
+.file-upload-container {
+  margin-top: 20px;
+}
+
+.file-choose-label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.upload-btn {
+  margin-top: 10px;
+}
+
+.selected-file-info {
+  margin-top: 10px;
+}
+
+.upload-feedback {
+  margin-top: 10px;
+}
+
+.upload-feedback.success {
+  color: #28a745;
+}
+
+.upload-feedback.failure {
+  color: #721c24;
+}
+
+input {
+  padding-top: 14px;
+}

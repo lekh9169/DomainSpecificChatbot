@@ -1,0 +1,211 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    margin: 44px -60px 8px 0px;
+  }
+}
+
+.App-header {
+  background-color: rgb(12, 35, 82);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(208, 73, 73);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* App.css */
+
+/* ... Other styles ... */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.card {
+  background-color: #304254; /* Set a classic background color */
+  border: none; /* Remove card border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow to the card */
+  transform: perspective(1000px) scale(0.8); /* Apply a 3D effect with scaleY */
+  transition: transform 0.5s ease; /* Add a smooth transition to the transform property */
+  max-width: 600px;
+  width: 100%;
+  font-size: smaller;
+}
+
+.card:hover {
+  transform: perspective(1000px) scale(1); /* Adjust the scaleY on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance the box shadow on hover */
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  overflow-y: auto;
+}
+
+.messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.message {
+
+  padding: 15px;
+  max-width: 70%;
+  align-self: flex-start;
+}
+
+.message-left {
+  color: white;
+  align-self: flex-start;
+}
+
+.message-right {
+  color: white;
+  align-self: flex-end;
+}
+
+.left {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  background-color: #4caf50;
+}
+
+.right {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  background-color: #2196f3;
+}
+.user-input {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  flex-grow: 1;
+}
+
+.form-control {
+  flex-grow: 1;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.btn-primary {
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Add a smooth transition to background color */
+}
+
+.btn-primary:hover {
+  background-color: #007bff; /* Change background color on hover */
+}
+
+.btn-primary.loading {
+  position: relative;
+}
+
+.btn-primary.loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid transparent;
+  border-top: 4px solid #ffffff; /* Set loading spinner color */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite; /* Add a spinning animation for loading */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.time {
+  font-size: 2vh;
+}
+
+
+/* App.css */
+
+/* ... Other styles ... */
+
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #007bff; /* Set scrollbar thumb color */
+  border-radius: 10px; /* Set scrollbar thumb border radius */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0b141c; /* Set scrollbar track color */
+}
+
+/* For Firefox */
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #007bff #f8f9fa; /* Set scrollbar thumb and track colors */
+}
+
+.scrollbar-thumb {
+  background-color: #007bff; /* Set scrollbar thumb color */
+  border-radius: 10px; /* Set scrollbar thumb border radius */
+}
+
+.scrollbar-track {
+  background-color: #2975c1; /* Set scrollbar track color */
+}
+
+/* Apply the styles to the messages container */
+.messages::-webkit-scrollbar,
+.messages .scrollbar {
+  width: 10px;
+}
+
+.messages::-webkit-scrollbar-thumb,
+.messages .scrollbar-thumb {
+  background-color: #007bff; /* Set scrollbar thumb color */
+  border-radius: 10px; /* Set scrollbar thumb border radius */
+}
+
+.messages::-webkit-scrollbar-track,
+.messages .scrollbar-track {
+  background-color: #304254; /* Set scrollbar track color */
+}
